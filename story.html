@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ravi & Nayara Webtoon</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", "Poppins", sans-serif;
+      background: #0b0e2e;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 20px;
+      text-align: center;
+      color: #ffef99;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: linear-gradient(135deg, #121538, #1b1f4a);
+      padding: 12px 0;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #ffef99;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 10px 18px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 0 rgba(255, 239, 153, 0);
+    }
+
+    .navbar a:hover {
+      background: #ffd966;
+      color: #000;
+      box-shadow: 0 0 12px rgba(255, 239, 153, 0.7);
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    .navbar a.active {
+      background: #ffd966;
+      color: #000;
+      box-shadow: 0 0 12px rgba(255, 239, 153, 0.7);
+    }
+
+    /* Webtoon Panels */
+    .panel {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #1b1f4a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    }
+
+    .panel img {
+      width: 100%;
+      display: block;
+    }
+
+    .dialogue {
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      background: #ffef99; /* yellow for Ravi */
+      color: #000;
+      margin: 6px;
+      border-radius: 12px;
+    }
+
+    .nayara {
+      background: #c8e6ff; /* blue for Nayara */
+    }
+
+    .caption {
+      padding: 12px;
+      font-size: 1rem;
+      text-align: center;
+      background: #121538;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="story.html" class="active">📖 Story</a>
+    <a href="characters.html">👤 Characters</a>
+    <a href="quiz.html">❓ Quiz</a>
+    <a href="video.html">🎬 Video</a>
+  </div>
+
+  <h1>🌌 Ravi & Nayara Discover Space Weather</h1>
+
+  <!-- Panel 1 -->
+  <div class="panel">
+    <img src="images/1.jpeg" alt="Taxi Driver Ravi meets Nayara" />
+    <div class="dialogue">
+      Ravi: "My name is Ravi, and I'm a 38-year-old taxi driver. For more than a decade, I've been cruising the streets of this bustling city in my bright yellow cab."
+    </div>
+    <div class="dialogue">
+      Ravi: "Every day brings a mix of passengers—students racing to school, office workers glued to their phones, and tourists marveling at skyscrapers."
+    </div>
+  </div>
+
+  <!-- Panel 2 -->
+  <div class="panel">
+    <img src="images/2.jpeg" alt="Taxi in city traffic" />
+    <div class="dialogue">
+      Ravi: "My passenger was Nayara, an energetic eight-year-old with sparkling eyes and a backpack stuffed with books. She was unusually quiet at first."
+    </div>
+  </div>
+
+  <!-- Panel 3 -->
+  <div class="panel">
+    <img src="images/3.jpeg" alt="Nayara reading book" />
+    <div class="dialogue">
+      Ravi: "Absorbed in her favorite science book filled with colorful diagrams of the Sun, planets, and galaxies. I had no idea that a simple ride across town would turn into a crash course on one of the most powerful forces in the universe: SPACE WEATHER."
+    </div>
+  </div>
+
+  <!-- Panel 4 -->
+  <div class="panel">
+    <img src="images/4.jpeg" alt="GPS spinning" />
+    <div class="dialogue">
+      Ravi: "Just a few minutes into our trip, things started going haywire. My GPS display spun in circles, the taxi radio buzzed with static, and even my phone signal dropped completely."
+    </div>
+  </div>
+
+  <!-- Panel 5 -->
+  <div class="panel">
+    <img src="images/5.jpeg" alt="Traffic lights" />
+    <div class="dialogue">
+      Ravi: "At the next intersection, the traffic lights blinked on and off before freezing on red. Looks like the whole city is glitching. I guess we’ll have to wait this out."
+    </div>
+  </div>
+
+  <!-- Panel 6 -->
+  <div class="panel">
+    <img src="images/6.jpeg" alt="Nayara explaining space weather" />
+    <div class="dialogue nayara">
+      Nayara: "Uncle Ravi, I think the Sun is doing this."
+    </div>
+    <div class="dialogue">
+      Ravi: "The Sun? You mean the hot ball of fire up there?"
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "Not just fire—it’s a nuclear engine! Solar activity like flares, CMEs, and solar wind can influence the performance and reliability of our technology on Earth. That’s called space weather."
+    </div>
+  </div>
+
+  <!-- Panel 7 -->
+  <div class="panel">
+    <img src="images/7.jpeg" alt="Nayara teaching" />
+    <div class="dialogue">
+      Ravi: "So how do these storms affect people like me?"
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "Every time you use GPS, satellites send signals that pass through the ionosphere. Solar storms shake this layer and can confuse your GPS. Radio and phones are also affected."
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "Geomagnetic storms can induce currents that disrupt power lines, traffic lights, and transformers."
+    </div>
+    <div class="dialogue">
+      Ravi: "So even my favorite songs aren’t safe from the Sun? That’s wild—a traffic jam caused by outer space."
+    </div>
+  </div>
+
+  <!-- Panel 8 -->
+  <div class="panel">
+    <img src="images/8.jpeg" alt="Space weather impacts" />
+    <div class="dialogue nayara">
+      Nayara: "Space weather affects almost everyone differently."
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "✈️ Pilots: High-frequency radio can fail at high altitudes."
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "⚡ Power Engineers: Geomagnetic storms push unwanted currents through power grids."
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "🛰️ Satellite Operators: Increased drag can slow satellites or throw them off orbit."
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "🌾 Farmers: GPS-guided tractors and irrigation systems can be disrupted."
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "👩‍🚀 Astronauts: Need to move to shielded areas to avoid radiation."
+    </div>
+    <div class="dialogue">
+      Ravi: "So the Sun isn’t just shining on us—it’s shaping everything we depend on."
+    </div>
+    <div class="dialogue nayara">
+      Nayara: "Exactly! Every time the Sun sneezes, the whole world feels it."
+    </div>
+  </div>
+
+  <!-- Panel 9 -->
+  <div class="panel">
+    <img src="images/9.jpeg" alt="Reflecting on space weather" />
+    <div class="dialogue">
+      Ravi: "It’s amazing how something so far away can affect our daily life in so many ways!"
+    </div>
+  </div>
+
+  <!-- Panel 10 -->
+  <div class="panel">
+    <img src="images/10.jpeg" alt="Taxi driving again" />
+    <div class="dialogue">
+      Ravi: "I’ll drive on, inspired by the stars!"
+    </div>
+  </div>
+
+</body>
+</html>

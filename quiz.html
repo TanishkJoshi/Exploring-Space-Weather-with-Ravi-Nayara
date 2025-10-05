@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ravi & Nayara Space Quiz</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Comic Sans MS", "Poppins", sans-serif;
+        background: #0b0e2e;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 10px 40px 10px;
+      }
+
+      h1 {
+        margin: 20px 0;
+        text-align: center;
+        color: #ffef99;
+      }
+
+      /* Navbar */
+      .navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background: linear-gradient(135deg, #121538, #1b1f4a);
+        padding: 12px 0;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #ffef99;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 10px 18px;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 0 rgba(255, 239, 153, 0);
+      }
+
+      .navbar a:hover {
+        background: #ffd966;
+        color: #000;
+        box-shadow: 0 0 12px rgba(255, 239, 153, 0.7);
+        transform: translateY(-3px) scale(1.05);
+      }
+
+      .navbar a.active {
+        background: #ffd966;
+        color: #000;
+        box-shadow: 0 0 12px rgba(255, 239, 153, 0.7);
+      }
+
+      /* Quiz Cards */
+      .quiz-card {
+        background: #1b1f4a;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 15px 0;
+        width: 100%;
+        max-width: 600px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .question {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+      }
+
+      .options button {
+        display: block;
+        margin: 8px 0;
+        padding: 10px 14px;
+        width: 100%;
+        border: none;
+        border-radius: 12px;
+        background: #ffef99;
+        color: #000;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .options button:hover {
+        background: #ffd966;
+      }
+
+      .feedback {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar">
+      <a href="index.html">🏠 Home</a>
+      <a href="story.html">📖 Story</a>
+      <a href="characters.html">👤 Characters</a>
+      <a href="quiz.html" class="active">❓ Quiz</a>
+      <a href="video.html">🎬 Video</a>
+    </div>
+
+    <h1>🌌 Ravi & Nayara Space Quiz</h1>
+
+    <!-- Quiz Questions -->
+    <div class="quiz-card">
+      <div class="question">1. What is space weather?</div>
+      <div class="options">
+        <button onclick="checkAnswer(this,'wrong')">
+          The weather on other planets
+        </button>
+        <button onclick="checkAnswer(this,'right')">
+          Variations in the space environment between the Sun and Earth
+        </button>
+        <button onclick="checkAnswer(this,'wrong')">
+          Rain and clouds in space
+        </button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-card">
+      <div class="question">2. What can solar storms affect on Earth?</div>
+      <div class="options">
+        <button onclick="checkAnswer(this,'wrong')">Only the weather</button>
+        <button onclick="checkAnswer(this,'wrong')">
+          Nothing, they are too far away
+        </button>
+        <button onclick="checkAnswer(this,'right')">
+          Satellites, GPS, power grids, and communications
+        </button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-card">
+      <div class="question">3. What is a solar flare?</div>
+      <div class="options">
+        <button onclick="checkAnswer(this,'right')">
+          A sudden explosion of light and radiation on the Sun
+        </button>
+        <button onclick="checkAnswer(this,'wrong')">A tiny sunspot</button>
+        <button onclick="checkAnswer(this,'wrong')">
+          A comet near the Sun
+        </button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-card">
+      <div class="question">4. What is a CME (Coronal Mass Ejection)?</div>
+      <div class="options">
+        <button onclick="checkAnswer(this,'wrong')">
+          A small flare on the Sun’s surface
+        </button>
+        <button onclick="checkAnswer(this,'right')">
+          A giant bubble of superheated plasma ejected from the Sun
+        </button>
+        <button onclick="checkAnswer(this,'wrong')">
+          A meteor hitting the Earth
+        </button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-card">
+      <div class="question">5. What causes auroras on Earth?</div>
+      <div class="options">
+        <button onclick="checkAnswer(this,'right')">
+          Solar particles colliding with Earth's atmosphere
+        </button>
+        <button onclick="checkAnswer(this,'wrong')">
+          Clouds reflecting sunlight
+        </button>
+        <button onclick="checkAnswer(this,'wrong')">Rain and lightning</button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-card">
+      <div class="question">6. What is a geomagnetic storm?</div>
+      <div class="options">
+        <button onclick="checkAnswer(this,'right')">
+          Disturbance in Earth's magnetic field caused by solar activity
+        </button>
+        <button onclick="checkAnswer(this,'wrong')">
+          A normal thunderstorm on Earth
+        </button>
+        <button onclick="checkAnswer(this,'wrong')">
+          A hurricane in space
+        </button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="quiz-card">
+      <div class="question">7. Who can be affected by space weather?</div>
+      <div class="options">
+        <button onclick="checkAnswer(this,'wrong')">Only astronauts</button>
+        <button onclick="checkAnswer(this,'wrong')">Only scientists</button>
+        <button onclick="checkAnswer(this,'right')">
+          Everyone — taxi drivers, pilots, farmers, astronauts, and more
+        </button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+
+    <script>
+      function checkAnswer(button, type) {
+        const feedback = button.parentElement.nextElementSibling;
+        if (type === "right") {
+          feedback.textContent = "✅ Correct!";
+          feedback.style.color = "#0f0";
+        } else {
+          feedback.textContent = "❌ Try again!";
+          feedback.style.color = "#f55";
+        }
+      }
+    </script>
+  </body>
+</html>

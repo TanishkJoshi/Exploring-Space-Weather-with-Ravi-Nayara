@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ravi & Nayara - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", "Poppins", sans-serif;
+      background: #0b0e2e;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: linear-gradient(135deg, #121538, #1b1f4a);
+      padding: 12px 0;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #ffef99;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 10px 18px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 0 rgba(255, 239, 153, 0);
+    }
+
+    .navbar a:hover {
+      background: #ffd966;
+      color: #000;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 12px rgba(255, 239, 153, 0.7);
+    }
+
+    .navbar a.active {
+      background: #ffd966;
+      color: #000;
+      box-shadow: 0 0 12px rgba(255, 239, 153, 0.7);
+    }
+
+    .navbar a span {
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    /* Page content */
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 800px;
+    }
+
+    .hero-image {
+      max-width: 500px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      color: #ffef99;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #c8e6ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html" class="active"><span>🏠</span>Home</a>
+    <a href="story.html"><span>📖</span>Story</a>
+    <a href="characters.html"><span>👤</span>Characters</a>
+    <a href="quiz.html"><span>❓</span>Quiz</a>
+    <a href="video.html"><span>🎬</span>Video</a>
+  </div>
+
+  <div class="content">
+    <h1>🌌 Welcome to Ravi & Nayara Space Adventure!</h1>
+    <p>Join Ravi and Nayara as they explore the fascinating world of space weather. Learn how solar flares, CMEs, and geomagnetic storms impact our lives in a fun and interactive way!</p>
+    <img src="images/Hero.jpeg" alt="Ravi & Nayara Hero" class="hero-image">
+  </div>
+
+</body>
+</html>
